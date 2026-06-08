@@ -5,15 +5,24 @@
   --card-front-color: #772D2D;
   --card-back-color: #AF3438;
 }
-
 body {
   background: url(img/bg-desktop-red.webp);
   font-family: Gluten;
+}
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 15px 25px;
+  background-color: #3a1010;
 }
 .cartao__conteudo {
   background-color: var(--card-front-color);
   text-align: center;
   height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition:  tranform 0.8s;
 } 
 #container {
   display: flex;
@@ -45,6 +54,12 @@ body {
 .cartao__conteudo__resposta p {
   color: var(--card-back-color);
   font-weight: 700;
+}
+.cartao__conteudo__pergunta .cartao__conteudo__resposta{
+position: absolute;
+border-radius: 12px;
+box-shadow: 0 6px 12px rgba(0, 0, o, 0.15);
+backface-visibility: hidden;
 }
 footer {
   background-color: black;
