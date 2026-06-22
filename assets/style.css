@@ -6,7 +6,7 @@
   --card-back-color: #AF3438;
 }
 body {
-  background: url(img/bg-desktop-red.webp);
+  background: url(img/bg-desktop-red\ .webp);
   font-family: Gluten;
 }
 .cabecalho{
