@@ -22,7 +22,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition:  tranform 0.8s;
+  transition:  tranform 300ms ease-in-out;
 } 
 #container {
   display: flex;
@@ -46,6 +46,7 @@ body {
   margin: 0.6rem;
   border-radius: 0.6rem;
   font-size: 1vw;
+  backface-visibility: hidden;
 }
 .cartao__conteudo__pergunta p {
   color: var(--text-color);
@@ -60,6 +61,9 @@ position: absolute;
 border-radius: 12px;
 box-shadow: 0 6px 12px rgba(0, 0, o, 0.15);
 backface-visibility: hidden;
+}
+.cartao:hover .cartao__conteudo{
+transform: rotateY(180deg);
 }
 footer {
   background-color: black;
